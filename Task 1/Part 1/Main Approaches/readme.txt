@@ -1,0 +1,1 @@
+This folder contains the models on which our models gave decent enough accuracy (hence, the name "Main Approaches"). 
