@@ -17,12 +17,12 @@ We have structured our project into separate folders to maintain clarity and org
 
 ### Folder Breakdown:
 1. **Task 1**
-   - `main_approach/`: Contains the main method used.
-   - `Other approaches/`: Contains other approaches we explored.
+   - `Main Approach`: Contains the main method used.
+   - `Other Approaches`: Contains other approaches we explored.
    
 2. **Task 2**
-   - `main_approach/`: Contains the main method used.
-   - `Other_approaches/`: Contains other approaches we explored.
+   - `Main Approach`: Contains the main method used.
+   - `Other Approaches`: Contains other approaches we explored.
 
 3. **Project Documentation**
     - contains all the relevant latex files, images, pdfs, etc.
