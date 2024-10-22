@@ -1,6 +1,6 @@
 # CS771: Mini-Project 1
 
-**Group Name**: The Boys
+##**Group Name**: The Boys
 
 ## Group Members:
 - **Chaitanya Vishwas Bramhapurikar** (230305)
