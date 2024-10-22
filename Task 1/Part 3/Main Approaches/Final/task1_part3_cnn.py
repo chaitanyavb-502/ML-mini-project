@@ -4,6 +4,12 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from sklearn.preprocessing import LabelEncoder
+import tensorflow as tf
+
+# Set random seeds for reproducibility
+seed_value = 42
+np.random.seed(seed_value)
+tf.random.set_seed(seed_value)
 
 # Load training datasets
 train_seq_df = pd.read_csv("datasets/train/train_text_seq.csv")
@@ -20,7 +26,7 @@ train_seq_Y = label_encoder.fit_transform(train_seq_Y)
 train_seq_Y = np.array(train_seq_Y)
 
 # Split the data into training and validation sets
-X_train, X_val, y_train, y_val = train_test_split(train_seq_X, train_seq_Y, test_size=0.2, random_state=42)
+# X_train, X_val, y_train, y_val = train_test_split(train_seq_X, train_seq_Y, test_size=0.2, random_state=42)
 
 # Define CNN model architecture with reduced parameters
 def build_cnn_model(input_shape):
@@ -36,8 +42,8 @@ def build_cnn_model(input_shape):
     return model
 
 # Train the CNN model
-model = build_cnn_model(X_train.shape)
-model.fit(X_train, y_train, epochs=100, batch_size=64, verbose=0)
+model = build_cnn_model(train_seq_X.shape)
+model.fit(train_seq_X, train_seq_Y, epochs=100, batch_size=64, verbose=0)
 
 # Load test dataset
 test_seq_df = pd.read_csv("datasets/test/test_text_seq.csv")
