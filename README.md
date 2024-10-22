@@ -24,6 +24,9 @@ We have structured our project into separate folders to maintain clarity and org
    - `main_approach/`: Contains the main method used.
    - `Other_approaches/`: Contains other approaches we explored.
 
+3. **Project Documentation**
+    - contains all the relevant latex files, images, pdfs, etc.
+
 ---
 
 ## Instructions:
